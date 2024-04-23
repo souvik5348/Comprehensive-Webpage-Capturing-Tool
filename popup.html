@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+    <style>
+        body { padding: 10px; font-family: Arial, sans-serif; }
+        label { margin-top: 10px; }
+        button { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Select Features</h2>
+    <form id="featuresForm">
+        <div>
+            <input type="checkbox" id="captureTitle" name="feature" value="captureTitle">
+            <label for="captureTitle">Capture Title</label>
+        </div>
+        <div>
+            <input type="checkbox" id="captureDescription" name="feature" value="captureDescription">
+            <label for="captureDescription">Capture Description</label>
+        </div>
+        <div>
+            <input type="checkbox" id="copyText" name="feature" value="copyText">
+            <label for="copyText">Copy All Text</label>
+        </div>
+        <div>
+            <input type="checkbox" id="downloadImages" name="feature" value="downloadImages">
+            <label for="downloadImages">Download Images</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="rectangularScreenshot" name="feature" value="rectangularScreenshot">
+            <label for="rectangularScreenshot">Capture Rectangular Screenshot</label>
+        </div>        
+        
+        <div>
+            <input type="checkbox" id="scrollableScreenshot" name="feature" value="scrollableScreenshot">
+            <label for="scrollableScreenshot">Scrollable Screenshot</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="facebookPostData" name="feature" value="facebookPostData">
+            <label for="facebookPostData">Capture Facebook Post Data</label>
+        </div>
+        
+        <div>
+            <button type="button" id="applySettings">Apply Settings</button>
+        </div>
+
+    </form>
+    <script src="popup.js"></script>
+</body>
+</html>

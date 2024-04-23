@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Feature Selector",
+    "version": "1.0",
+    "permissions": ["activeTab", "storage", "tabs", "downloads","scripting"],
+    
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "image/icon16.png",
+        "48": "image/icon48.png",
+        "128": "image/icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+        "16": "image/icon16.png",
+        "48": "image/icon48.png",
+        "128": "image/icon128.png"
+    }
+  }
+  
